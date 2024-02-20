@@ -1,0 +1,12 @@
+﻿  my_interaction_functions.cpp
+  STR_RTD.cpp
+C:\PIIC\STR_RTD\include\my_interaction_functions.cpp(88,39): warning C4267: 'argumento': conversão de 'size_t' para 'int', possível perda de dados
+C:\PIIC\STR_RTD\include\my_interaction_functions.cpp(120,39): warning C4267: 'argumento': conversão de 'size_t' para 'int', possível perda de dados
+  Gerando Código...
+C:\PIIC\STR_RTD\STR_RTD\STR_RTD.cpp(72,4): error C4235: extensão não padrão usada: palavra-chave '__asm' sem suporte nesta arquitetura
+C:\PIIC\STR_RTD\STR_RTD\STR_RTD.cpp(72,12): error C2065: 'NOP': identificador não declarado
+C:\PIIC\STR_RTD\STR_RTD\STR_RTD.cpp(72,16): error C2143: erro de sintaxe: ';' ausente antes de '}'
+C:\PIIC\STR_RTD\STR_RTD\STR_RTD.cpp(73,4): error C4235: extensão não padrão usada: palavra-chave '__asm' sem suporte nesta arquitetura
+C:\PIIC\STR_RTD\STR_RTD\STR_RTD.cpp(73,12): error C2065: 'NOP': identificador não declarado
+C:\PIIC\STR_RTD\STR_RTD\STR_RTD.cpp(73,16): error C2143: erro de sintaxe: ';' ausente antes de '}'
+C:\PIIC\STR_RTD\include\my_interaction_functions.cpp(59,1): warning C4715: 'ConnectUnity': nem todos os caminhos de controle retornam um valor
