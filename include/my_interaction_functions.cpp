@@ -256,10 +256,6 @@ void gotoSlider1(int pos)
         while (getSlider1Pos() != 0) {
             continue;
         }
-
-        while (getSlider1Pos() == 0) {
-            continue;
-        }
     }
 
     stopSlider1(); //when pos reached stop
@@ -319,10 +315,6 @@ void gotoSlider2(int pos)
         moveSlider2Back(); //if pos == 0 then send the Slider 1 back
 
         while (getSlider2Pos() != 0) {
-            continue;
-        }
-
-        while (getSlider2Pos() == 0) {
             continue;
         }
     }

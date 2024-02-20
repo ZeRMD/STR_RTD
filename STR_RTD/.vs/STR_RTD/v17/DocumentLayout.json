@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "C:\\PIIC\\STR_RTD\\STR_RTD\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{28D49468-E54C-4FA7-8321-B8123A0D66AE}|STR_RTD.vcxproj|C:\\PIIC\\STR_RTD\\include\\my_interaction_functions.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{28D49468-E54C-4FA7-8321-B8123A0D66AE}|STR_RTD.vcxproj|C:\\PIIC\\STR_RTD\\STR_RTD\\STR_RTD.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{28D49468-E54C-4FA7-8321-B8123A0D66AE}|STR_RTD.vcxproj|solutionrelative:STR_RTD.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28D49468-E54C-4FA7-8321-B8123A0D66AE}|STR_RTD.vcxproj|C:\\PIIC\\STR_RTD\\include\\my_interaction_functions.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{28D49468-E54C-4FA7-8321-B8123A0D66AE}|STR_RTD.vcxproj|C:\\PIIC\\STR_RTD\\include\\my_interaction_functions.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
@@ -20,7 +20,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 206,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
@@ -32,31 +32,30 @@
               "RelativeToolTip": "..\\include\\my_interaction_functions.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-02-16T16:46:34.224Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-16T16:46:34.224Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "my_interaction_functions.cpp",
               "DocumentMoniker": "C:\\PIIC\\STR_RTD\\include\\my_interaction_functions.cpp",
               "RelativeDocumentMoniker": "..\\include\\my_interaction_functions.cpp",
               "ToolTip": "C:\\PIIC\\STR_RTD\\include\\my_interaction_functions.cpp",
               "RelativeToolTip": "..\\include\\my_interaction_functions.cpp",
-              "ViewState": "AQIAAEgAAAAAAAAAAAAAAGgAAAA6AAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAPMAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-02-16T16:53:33.37Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "STR_RTD.cpp",
               "DocumentMoniker": "C:\\PIIC\\STR_RTD\\STR_RTD\\STR_RTD.cpp",
               "RelativeDocumentMoniker": "STR_RTD.cpp",
               "ToolTip": "C:\\PIIC\\STR_RTD\\STR_RTD\\STR_RTD.cpp",
               "RelativeToolTip": "STR_RTD.cpp",
-              "ViewState": "AQIAACoAAAAAAAAAAAAAABQBAAAuAAAA",
+              "ViewState": "AQIAAG4AAAAAAAAAAAAiwBQBAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-02-15T19:21:13.569Z",
               "EditorCaption": ""

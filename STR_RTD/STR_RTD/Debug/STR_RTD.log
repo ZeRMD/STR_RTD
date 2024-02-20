@@ -1,2 +1,18 @@
-﻿  STR_RTD.cpp
+﻿  my_interaction_functions.cpp
+C:\PIIC\STR_RTD\include\my_interaction_functions.cpp(12,1): warning C4005: '_WINSOCK_DEPRECATED_NO_WARNINGS': redefinição de macro
+  C:\PIIC\STR_RTD\include\my_interaction_functions.cpp(12,1):
+  '_WINSOCK_DEPRECATED_NO_WARNINGS' declarado anteriormente na linha de comando
+  
+C:\PIIC\STR_RTD\include\my_interaction_functions.cpp(61,1): warning C4715: 'ConnectUnity': nem todos os caminhos de controle retornam um valor
+LINK : warning LNK4098: defaultlib 'LIBCMTD' conflita com uso de outras bibliotecas; use /NODEFAULTLIB:library
+freeRTOS.lib(croutine.obj) : warning LNK4099: PDB '' não foi encontrado 'freeRTOS.lib(croutine.obj)' ou no ''; vinculando objeto quando quando sem nenhuma informação de depuração
+freeRTOS.lib(heap_5.obj) : warning LNK4099: PDB '' não foi encontrado 'freeRTOS.lib(heap_5.obj)' ou no ''; vinculando objeto quando quando sem nenhuma informação de depuração
+freeRTOS.lib(timers.obj) : warning LNK4099: PDB '' não foi encontrado 'freeRTOS.lib(timers.obj)' ou no ''; vinculando objeto quando quando sem nenhuma informação de depuração
+freeRTOS.lib(main.obj) : warning LNK4099: PDB '' não foi encontrado 'freeRTOS.lib(main.obj)' ou no ''; vinculando objeto quando quando sem nenhuma informação de depuração
+freeRTOS.lib(list.obj) : warning LNK4099: PDB '' não foi encontrado 'freeRTOS.lib(list.obj)' ou no ''; vinculando objeto quando quando sem nenhuma informação de depuração
+freeRTOS.lib(port.obj) : warning LNK4099: PDB '' não foi encontrado 'freeRTOS.lib(port.obj)' ou no ''; vinculando objeto quando quando sem nenhuma informação de depuração
+freeRTOS.lib(queue.obj) : warning LNK4099: PDB '' não foi encontrado 'freeRTOS.lib(queue.obj)' ou no ''; vinculando objeto quando quando sem nenhuma informação de depuração
+freeRTOS.lib(tasks.obj) : warning LNK4099: PDB '' não foi encontrado 'freeRTOS.lib(tasks.obj)' ou no ''; vinculando objeto quando quando sem nenhuma informação de depuração
+freeRTOS.lib(main_blinky.obj) : warning LNK4099: PDB '' não foi encontrado 'freeRTOS.lib(main_blinky.obj)' ou no ''; vinculando objeto quando quando sem nenhuma informação de depuração
+freeRTOS.lib(Run-time-stats-utils.obj) : warning LNK4099: PDB '' não foi encontrado 'freeRTOS.lib(Run-time-stats-utils.obj)' ou no ''; vinculando objeto quando quando sem nenhuma informação de depuração
   STR_RTD.vcxproj -> C:\PIIC\STR_RTD\STR_RTD\Debug\STR_RTD.exe
