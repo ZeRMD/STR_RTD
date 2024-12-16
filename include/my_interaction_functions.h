@@ -5,6 +5,13 @@ extern "C" {
 }
 
 ////////////////
+// Unity cinnected function
+///////////////////////////
+int ConnectUnity();
+
+int DisconnectUnity();
+
+////////////////
 // Ports related functions
 ///////////////////////////
 

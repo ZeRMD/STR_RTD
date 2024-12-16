@@ -6,10 +6,14 @@
 #include <Ws2tcpip.h>
 
 #pragma comment(lib, "ws2_32.lib")
-
+/*
 #define SERVER_IP "127.0.0.1"
 #define SERVER_PORT 3000
+*/
 #define _WINSOCK_DEPRECATED_NO_WARNINGS 
+
+#define SERVER_IP "192.168.2.69"
+#define SERVER_PORT 80
 
 SOCKET clientSocket;
 
@@ -75,31 +79,29 @@ int DisconnectUnity()
 
 int GetBitValue(int portNumber, int portIndex)
 {
-    if (ConnectUnity() == EXIT_FAILURE)
-    {
-        return -1;
-    }
-
-    char message[8];
+    printf("Get\n");
+    char message[5];
 
     message[0] = 'G';
     message[1] = portNumber + '0';
     message[2] = portIndex + '0';
-    message[3] = 0;
+    message[3] = 'a';
+    message[4] = 'b';
 
-    send(clientSocket, message, strlen(message), 0);
+    send(clientSocket, message, 5, 0);
     //printf("Message sent to Unity: %s\n", message);
-
-    char buffer[8];
-    recv(clientSocket, buffer, sizeof(buffer), 0);
+    printf("SentG\n");
+    char buffer;
+    recv(clientSocket, &buffer, sizeof(char), 0);
     //printf("Response from Unity: %d\n", buffer[0]);
 
-    if (DisconnectUnity() != EXIT_SUCCESS)
-    {
-        return -1;
-    }
+    printf("ReceivedG");
+    printf("\n\n\n\n%c\n\n\n\n\n", buffer);
+    printf("\n\n\n\n%d\n\n\n\n\n", buffer);
 
-    return buffer[0];
+    return buffer - '0';
+    timer
+    delay();
 }
 
 void SetBitValue(int portNumber, int portIndex, int value)
@@ -107,25 +109,17 @@ void SetBitValue(int portNumber, int portIndex, int value)
     if (value != 0 && value != 1)
         return;
 
-    if (ConnectUnity() == EXIT_FAILURE)
-    {
-        return;
-    }
-
-    char message[8];
+    printf("Set\n");
+    char message[5];
     message[0] = 'S';
     message[1] = portNumber + '0';
     message[2] = portIndex + '0';
     message[3] = ' ';
     message[4] = value + '0';
 
-    send(clientSocket, message, strlen(message), 0);
+    send(clientSocket, message, 5, 0);
     //printf("Message sent to Unity: %s\n", message);
-
-    if (DisconnectUnity() != EXIT_SUCCESS)
-    {
-        return;
-    }
+    printf("SentSet\n");
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////////

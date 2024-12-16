@@ -353,11 +353,93 @@ void myDaemonTaskStartupHook(void) {
 	xTaskCreate(Task_Main_menu, "Task_Main_menu", 100, NULL, 0, NULL);
 }
 
+void stopConveyor() {
+	SetBitValue(0, 1, 0);
+	SetBitValue(0, 2, 0);
+}
+void moveConveyorFront() {
+	SetBitValue(0, 2, 0);
+	SetBitValue(0, 1, 1);
+}
+void moveConveyorBack() {
+	SetBitValue(0, 1, 0);
+	SetBitValue(0, 2, 1);
+}
+void movePunchingUp() {
+	SetBitValue(0, 4, 0);
+	SetBitValue(0, 3, 1);
+	return;
+}
+void movePunchingDown() {
+	SetBitValue(0, 3, 0);
+	SetBitValue(0, 4, 1);
+}
+void stopPunching() {
+	SetBitValue(0, 3, 0);
+	SetBitValue(0, 4, 0);
+}
+
 int main(int argc, char** argv) {
+	/*
 	initialiseHeap();
 	vApplicationDaemonTaskStartupHook = &myDaemonTaskStartupHook;
 	//vApplicationTickHook = &myTickHook;
 	//vApplicationIdleHook = &myIdleHook;
+
 	vTaskStartScheduler();
 	Sleep(5000);
+	*/
+
+	ConnectUnity();
+
+	/*
+	while (GetBitValue(0, 3) != 1) {
+
+		movePunchingDown();
+	}
+	*/
+	/*
+	//SetBitValue(0, 1, 1);
+	SetBitValue(0, 2, 0);
+	SetBitValue(0, 3, 1);
+	//SetBitValue(0, 3, 1);
+	
+	
+
+
+	GetBitValue(0,0);
+
+	GetBitValue(0,1);
+	*/
+	//stopPunching();
+	
+	
+	while (1) {
+		printf("1");
+		while (GetBitValue(0, 1) != 0) {  //WAIT for a product in the starting position
+			//delay(100);
+		}
+		printf("2");
+		moveConveyorFront();
+		while (GetBitValue(0, 2) !=	0) {  //WAIT for a product in the Punching station
+			//delay(100);
+		}
+		printf("3");
+		stopConveyor();
+		while (GetBitValue(0, 4) != 1) {
+			movePunchingDown();
+		}
+		printf("4");
+		stopPunching();
+		while (GetBitValue(0, 3) != 1) {
+			movePunchingUp();
+		}
+		printf("5");
+		//delay(1500);
+		stopPunching();
+		while (GetBitValue(0, 1) != 0) {  //WAIT for a product in the starting position
+			moveConveyorBack();
+		}
+	}
+	DisconnectUnity();
 }
